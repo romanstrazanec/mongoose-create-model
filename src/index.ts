@@ -6,7 +6,7 @@ interface IModel<Attrs> {
     build(attrs: Attrs): Doc<Attrs>
 }
 
-type _Model<Attrs> = Model<Doc<Attrs>> & IModel<Attrs>
+export type _Model<Attrs> = Model<Doc<Attrs>> & IModel<Attrs>
 
 export const createModel = <Attrs>(name: string, definition: SchemaDefinition<SchemaDefinitionType<any>>, options?: SchemaOptions) => {
     const schema = new Schema(definition, options ?? {
