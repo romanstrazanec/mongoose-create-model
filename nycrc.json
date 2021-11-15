@@ -1,0 +1,3 @@
+{
+  "extends": "@appngo-sk/mocha-chai"
+}
