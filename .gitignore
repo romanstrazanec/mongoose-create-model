@@ -1,4 +1,20 @@
-/node_modules/
-/build/
+# Project files
+/.idea
 
+# Packages
+/node_modules
+
+# Package lock files
 *.lock
+/package-lock.json
+
+# Build outputs
+/build
+/dist
+
+# Test outputs
+/.nyc_output
+/coverage
+
+# Log
+*.log
