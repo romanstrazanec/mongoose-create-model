@@ -13,9 +13,11 @@
     "email": "strazanec.roman@gmail.com"
   },
   "license": "ISC",
-  "main": "build/index.js",
-  "types": "build/index.d.ts",
-  "files": ["build"],
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
   "scripts": {
     "clean": "tsc -b --clean",
     "build": "tsc -p tsconfig.build.json",
