@@ -21,12 +21,14 @@
   "scripts": {
     "clean": "tsc -b --clean",
     "build": "tsc -p tsconfig.build.json",
-    "test": "mocha --checkLeaks -r tsconfig-paths/register -r ts-node/register -r test/hooks.mjs \"test/**/*.test.ts\""
+    "test": "mocha --checkLeaks -r tsconfig-paths/register -r ts-node/register -r source-map-support/register -r test/hooks.mjs \"test/**/*.test.ts\"",
+    "test:ci": "nyc npm test"
   },
   "dependencies": {
     "mongoose": "^6.0.12"
   },
   "devDependencies": {
+    "@appngo-sk/mocha-chai": "^1.0.5",
     "@types/chai": "^4.2.22",
     "@types/mocha": "^9.0.0",
     "chai": "^4.3.4",
