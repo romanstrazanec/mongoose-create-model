@@ -29,13 +29,7 @@
   },
   "devDependencies": {
     "@appngo-sk/mocha-chai": "^1.0.5",
-    "@types/chai": "^4.2.22",
-    "@types/mocha": "^9.0.0",
-    "chai": "^4.3.4",
-    "mocha": "^9.1.3",
     "mongodb-memory-server": "^7.6.0",
-    "ts-node": "^10.4.0",
-    "tsconfig-paths": "^3.11.0",
     "typescript": "^4.4.4"
   }
 }
